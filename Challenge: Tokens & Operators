@@ -1,0 +1,29 @@
+Program 1
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+cout<<"Program to find size of char, int, float, double"<<endl;
+cout<<"Size of char: "<<sizeof(char)<<endl;
+cout<<"Size of int: "<<sizeof(int)<<endl;                               //The output will be 2 bytes since i am using turbo C++
+cout<<"Size of float: "<<sizeof(float)<<endl;
+cout<<"Size of double: "<<sizeof(double)<<endl;
+getch();
+}
+
+
+Program 2
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+float a,b,c;
+cout<<"Program to find out the product of two numbers entered by the user"<<endl;
+cout<<"Enter two numbers: ";
+cin>>a>>b;
+c=a*b;
+cout<<"Product= "<<c;
+getch();
+}
