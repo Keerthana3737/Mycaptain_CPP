@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+ clrscr();
+ int age;
+ cout<<"Let's check if you are eligible to vote or not\n";
+ cout<<"Enter your age: ";
+ cin>>age;
+ if(age>=18)
+  cout<<Yor are eligible to vote in the upcoming election! \nYour vote MATTERS";
+ else
+  {
+   cout<<"You cannot vote in the upcoming election\n";
+   cout<<"You have to wait "<<(18-age)<<" more years to cast your first vote";
+  }
+ getch();
+} 
