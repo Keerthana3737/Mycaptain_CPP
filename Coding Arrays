@@ -9,7 +9,7 @@ void main()
   cin>>arr[i];                      //getting input from the user
  cout<<"You entered: ";
  for(i=0;i<5;i++)
-  cout<<endl<<*(arr+i);            //using pointers to display array elements
+  cout<<endl<<*(arr+i);            //using pointer to display array elements
  getch();
 } 
  
