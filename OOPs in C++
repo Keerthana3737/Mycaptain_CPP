@@ -1,0 +1,43 @@
+#include<iostream.h
+#include<conio.h>
+#include<iomanip.h>
+class time
+{
+ private:
+      int seconds;
+      int hh,mm,ss;
+ public:
+      void gettime(void);
+      void coninsec(void);
+      void displaytime(void);
+};
+void time::gettime(void)
+{
+ cout<<"Enter Time"<<endl;
+ cout<<"Hours? ";
+ cin>>hh;
+ cout<<"Minutes? ";
+ cin>>mm;
+ cout<<"Seconds? ";
+ cin>>ss;
+}
+void time::coninsec(void)
+{
+ seconds=hh*3600 + mm*60 + ss;
+}
+void time::displaytime(void)
+{
+ cout<<"The time is= "<<setw(2)<<setfill('0')<<hh<<":"
+                      <<setw(2)<<setfill('0')<<mm<<":"
+                      <<setw(2)<<setfill('0')<<ss<<":"
+cout<<"Time in total seconds: "<<seconds;
+}
+void main()
+{
+clrscr();
+time t;
+t.gettime();
+t.coninsec();
+t.displaytime;
+getch();
+}
