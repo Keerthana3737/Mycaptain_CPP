@@ -41,4 +41,51 @@ int main()
  {
   system("cls");
   
-  cout<<"\t\t***** STUDENT DATABASE MANAGEMENT SYSTEM *****\n\n":
+  cout<<"\t\t***** STUDENT DATABASE MANAGEMENT SYSTEM *****\n\n";
+  cout<<"\n1. Add Records";
+  cout<<"\n2. List Records";
+  cout<<"\n3. Modify Records";
+  cout<<"\n4. Delete Records";
+  cout<<"\n5. Exit Program\n";
+  cout<<"Select Your Choice: ";
+  fflush(stdin);
+  choice=getche();
+  switch(choice)
+  {
+  case'1' : fseek(fp,0,SEEK_END);
+   another='Y';
+   while(another=='Y' || another=='y')
+    {
+     system("cls");
+     cout<<"Enter the First Name: ";
+     cin>>e.first_name;
+     cout<<"Enter the Last Name: ";
+     cin>>e.last_name;
+     cout<<"Enter the Course: ";
+     cin>>e.course;
+     cout<<"Enter the Section: ";
+     cin>>e.section;
+     fwrite((&e,recsize,1,fp);
+     cout<<"\nAdd Another Record (Y/N): ";
+     fflush(stdin);
+     another=getchar();
+   }
+  break; 
+   
+  case '2': system("cls");
+   rewind(fp);
+   cout<<"*** View the Records in the Database ***\n";
+   while(fread(&e,recsize,1,fp)==1)
+    {
+     cout<<"\n\n"<<e.first_name<<setw(10)<<e.last_name;
+     cout<<"\n"<<e.course<<setw(8)<<e.section;
+    }
+    cout<<"\n\n";
+    system("pause");
+    break;
+  
+ case '3':  system("cls");
+   
+ 
+  
+  
