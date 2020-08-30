@@ -27,7 +27,7 @@ int main()
 
 
 	   cout<<" Press 1 Enter Record \n";
-	   cout<<" Press 2 Delet Record \n";
+	   cout<<" Press 2 Delete Record \n";
 	   cout<<" Press 3 Update Record \n";
 	   cout<<" Press 4 Search Record \n";
 	   cout<<" Press 5 Display Record \n";
@@ -36,11 +36,11 @@ int main()
 	   
 		 int rolchek=0;
 
-       int sw;
-	   cin>>sw;
+       int choice;
+	   cin>>choice;
 	   
 
-	   switch (sw)
+	   switch (choice)
 	   {
 
 		   case 1:
@@ -73,7 +73,7 @@ int main()
 		  cout<<"\t Enter the Name =  ";
 		 cin>>stud[arr].name;
 
-		 cout<<"\t Enter the Adress =  ";
+		 cout<<"\t Enter the Address =  ";
 		 cin>>stud[arr].adress;
 
 		 cout<<"\t Enter the Telephone no =  ";
@@ -82,7 +82,7 @@ int main()
          cout<<"\t Enter the Class = ";
 		 cin>>stud[arr].classs;
 
-		 cout<<"\t Enter the Markes =  ";
+		 cout<<"\t Enter the Marks =  ";
 		 cin>>stud[arr].marks;
 
          cout<<"\t Enter the Grade = ";
@@ -94,7 +94,7 @@ int main()
 		   }
 		   else
 		   {
-			   cout<<"This Record Already Enterd \n";
+			   cout<<"This Record is Already Enterd \n";
 		   }
 			   
 			   
@@ -144,13 +144,13 @@ int main()
 			   cout<<stud[j].rollno;
 			   cout<<"\t Name =  ";
 			   cout<<stud[j].name;
-			  cout<<"\t  Adress =  ";
+			  cout<<"\t  Address =  ";
 			   cout<<stud[j].adress;
 			    cout<<"\t  Telephone no =  ";
 				cout<<stud[j].tel;
 				 cout<<"\t Class = ";
 				 cout<<stud[j].classs;
-			    cout<<"\t  Markes =  ";
+			    cout<<"\t  Marks =  ";
 			   cout<<stud[j].marks;
 			      cout<<"\t Grade = ";
 			   cout<<stud[j].grade;
@@ -161,7 +161,7 @@ cout<<"\n\t ReEnter Data  ";
 			    cout<<"\n\t Enter the Name =  ";
 		 cin>>stud[j].name;
 
-		 cout<<"\n\t Enter the Adress =  ";
+		 cout<<"\n\t Enter the Address =  ";
 		 cin>>stud[j].adress;
 
 		 cout<<"\n\t Enter the Telephone no =  ";
@@ -170,7 +170,7 @@ cout<<"\n\t ReEnter Data  ";
          cout<<"\n\t Enter the Class = ";
 		 cin>>stud[j].classs;
 
-		 cout<<"\n\t Enter the Markes =  ";
+		 cout<<"\n\t Enter the Marks =  ";
 		 cin>>stud[j].marks;
 
          cout<<"\n\t Enter the Grade = ";
@@ -207,13 +207,13 @@ cout<<"\n\t ReEnter Data  ";
 			   cout<<stud[j].rollno;
 			   cout<<"\n \t Name =  ";
 			   cout<<stud[j].name;
-			  cout<<"\n \t  Adress =  ";
+			  cout<<"\n \t  Address =  ";
 			   cout<<stud[j].adress;
 			    cout<<"\n \t  Telephone no =  ";
 				cout<<stud[j].tel;
 				 cout<<"\n \t Class = ";
 				 cout<<stud[j].classs;
-			    cout<<"\n \t  Markes =  ";
+			    cout<<"\n \t  Marks =  ";
 			   cout<<stud[j].marks;
 			      cout<<"\n \t Grade = ";
 			   cout<<stud[j].grade;
@@ -268,7 +268,7 @@ cout<<"\n\t ReEnter Data  ";
 
 
 	       default:
-		    cout<<"\t Worng option Selected ";
+		    cout<<"\t You have Selected the Worng option";
 		   break;
 	   
 	}
